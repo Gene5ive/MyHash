@@ -12,4 +12,8 @@ class MyHash
   define_method(:fetch) do |fetch|
     @fetch
   end
+
+  define_method(:has_key?) do |store|
+    store == @store
+  end
 end
